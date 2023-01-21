@@ -1,0 +1,72 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.formContainer h2 {
+  font-size: 2rem;
+
+  /* font-weight: 500; */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100%;
+  margin: 1rem 0;
+  border: 1px solid rgb(231, 223, 223);
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #fff;
+  /* shadow */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  /* scroll color */
+  scrollbar-color: #f5f5f5 #fff;
+  /* scroll width */
+  scrollbar-width: thin;
+  /* focus border remove */
+  outline: none;
+}
+option {
+  padding: 0.2rem;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.parentOption {
+  pointer-events: none;
+
+  font-weight: 800;
+  margin-left: -10px;
+}
+.subItem {
+  margin-left: 10px;
+  padding: 0 0.5rem;
+  margin-top: -0.5rem;
+  /* margin-top: -15px; */
+}
+
+.subParentOption {
+  pointer-events: none;
+
+  /* background-color: red; */
+}
