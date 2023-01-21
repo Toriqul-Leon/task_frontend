@@ -1,198 +1,3 @@
-export const data2 = [
-  {
-    manufacturing: {
-      metalWorking: {
-        label: "Metalworking",
-        value: "Metalworking",
-        constructionOfMetalStructures: {
-          label: "Construction of metal structures",
-          value: "Construction of metal structures",
-        },
-        housesAndBuildings: {
-          label: "Houses and buildings",
-          value: "Houses and buildings",
-        },
-        metalProducts: {
-          label: "Metal products",
-          value: "Metal products",
-        },
-        metalWorks: {
-          label: "Metal works",
-          value: "Metal works",
-          cncMachining: {
-            label: "CNC-machining",
-            value: "CNC-machining",
-          },
-          forgingsFasteners: {
-            label: "Forgings,fasteners",
-            value: "Forgings,fasteners",
-          },
-          gasPlasmaLaserCutting: {
-            label: "Gas,plasma, Laser cutting",
-            value: "Gas,plasma, Laser cutting",
-          },
-          migTigAluminumWelding: {
-            label: "MIG,TIG, Aluminum welding",
-            value: "MIG,TIG, Aluminum welding",
-          },
-        },
-      },
-      plasticAndRubber: {
-        label: "Plastic and Rubber",
-        value: "Plastic and Rubber",
-        packaging: {
-          label: "Packaging",
-          value: "Packaging",
-        },
-        plasticGoods: {
-          label: "Plastic goods",
-          value: "Plastic goods",
-        },
-        plasticProcessingTechnology: {
-          label: "Plastic processing technology",
-          value: "Plastic processing technology",
-          blowing: {
-            label: "Blowing",
-            value: "Blowing",
-          },
-          moulding: {
-            label: "Moulding",
-            value: "Moulding",
-          },
-          plasticsWeldingAndProcessing: {
-            label: "Plastics welding and processing",
-            value: "Plastics welding and processing",
-          },
-        },
-        plasticsProfiles: {
-          label: "Plastics profiles",
-          value: "Plastics profiles",
-        },
-      },
-      printing: {
-        label: "Printing",
-        value: "Printing",
-        advertising: {
-          label: "Advertising",
-          value: "Advertising",
-        },
-        booksPeriodicalsPrinting: {
-          label: "Books/periodicals printing",
-          value: "Books/periodicals printing",
-        },
-        labellingAndPackagingPrinting: {
-          label: "Labelling and packaging printing",
-          value: "Labelling and packaging printing",
-        },
-      },
-      textileAndClothing: {
-        label: "Textile and Clothing",
-        value: "Textile and Clothing",
-        clothing: {
-          label: "Clothing",
-          value: "Clothing",
-        },
-        textile: {
-          label: "Textile",
-          value: "Textile",
-        },
-      },
-      wood: {
-        label: "Wood",
-        value: "Wood",
-        other: {
-          label: "Other (Wood)",
-          value: "Other (Wood)",
-        },
-        woodenBuildingMaterials: {
-          label: "Wooden building materials",
-          value: "Wooden building materials",
-        },
-        woodenHouses: {
-          label: "Wooden houses",
-          value: "Wooden houses",
-        },
-      },
-    },
-    other: {
-      label: "Other",
-      value: "Other",
-      creativeIndustries: {
-        label: "Creative industries",
-        value: "Creative industries",
-      },
-      energyTechnology: {
-        label: "Energy Technology",
-        value: "Energy Technology",
-      },
-      environment: {
-        label: "Environment",
-        value: "Environment",
-      },
-    },
-    services: {
-      label: "Services",
-      value: "Services",
-      businessServices: {
-        label: "Business Services",
-        value: "Business Services",
-      },
-      engineering: {
-        label: "Engineering",
-        value: "Engineering",
-      },
-      informationTechnologyAndTelecommunications: {
-        label: "Information Technology and Telecommunications",
-        value: "Information Technology and Telecommunications",
-        dataProcessingWebPortalEmarketing: {
-          label: "Data processing, Web portal, E-marketing",
-          value: "Data processing, Web portal, E-marketing",
-        },
-        programmingConsultancy: {
-          label: "Programming Consultancy",
-          value: "Programming Consultancy",
-        },
-        softwareHardware: {
-          label: "Software,Hardware",
-          value: "Software,Hardware",
-        },
-        telecommunications: {
-          label: "Telecommunications",
-          value: "Telecommunications",
-        },
-      },
-      tourism: {
-        label: "Tourism",
-        value: "Tourism",
-      },
-      translationServices: {
-        label: "Translation Services",
-        value: "Translation Services",
-      },
-      transportAndLogistics: {
-        label: "Transport and Logistics",
-        value: "Transport and Logistics",
-        air: {
-          label: "Air",
-          value: "Air",
-        },
-        rail: {
-          label: "Rail",
-          value: "Rail",
-        },
-        road: {
-          label: "Road",
-          value: "Road",
-        },
-        water: {
-          label: "Water",
-          value: "Water",
-        },
-      },
-    },
-  },
-];
-
 export const data = {
   manufacturing: [
     {
@@ -341,6 +146,169 @@ export const data = {
               value: "MIG,TIG, Aluminum welding",
             },
           ],
+        },
+      ],
+    },
+    {
+      label: "Plastic and Rubber",
+      value: "Plastic and Rubber",
+      plasticAndRubber: [
+        { label: "Packaging", value: "Packaging" },
+        {
+          label: "Plastic goods",
+          value: "Plastic goods",
+        },
+
+        {
+          label: "Plastic processing technology",
+          value: "Plastic processing technology",
+          plasticProcessingTechnology: [
+            {
+              label: "Blowing",
+              value: "Blowing",
+            },
+
+            { label: "Moulding", value: "Moulding" },
+
+            {
+              label: "Plastics welding and processing",
+              value: "Plastics welding and processing",
+            },
+          ],
+        },
+        {
+          label: "Plastics profiles",
+          value: "Plastics profiles",
+        },
+      ],
+    },
+    {
+      label: "Printing",
+      value: "Printing",
+      printing: [
+        {
+          label: "Advertising",
+          value: "Advertising",
+        },
+        {
+          label: "Books/Periodicals printing",
+          value: "Books/Periodicals printing",
+        },
+        {
+          label: "Labelling and packaging printing",
+          value: "Labelling and packaging printing",
+        },
+      ],
+    },
+    {
+      label: "Textile and Clothing",
+      value: "Textile and Clothing",
+      textileAndClothing: [
+        {
+          label: "Clothing",
+          value: "Clothing",
+        },
+        {
+          label: "Textile",
+          value: "Textile",
+        },
+      ],
+    },
+    {
+      label: "Wood",
+      value: "Wood",
+      wood: [
+        {
+          label: "Other (Wood)",
+          value: "Other (Wood)",
+        },
+        {
+          label: "Wooden building materials",
+          value: "Wooden building materials",
+        },
+        {
+          label: "Wooden houses",
+          value: "Wooden houses",
+        },
+      ],
+    },
+  ],
+  other: [
+    {
+      label: "Other",
+      style: "bold",
+    },
+    {
+      label: "Creative industries",
+      value: "Creative industries",
+    },
+    {
+      label: "Energy Technology",
+      value: "Energy Technology",
+    },
+    {
+      label: "Environment",
+      value: "Environment",
+    },
+  ],
+  services: [
+    {
+      label: "Services",
+      style: "bold",
+    },
+    {
+      label: "Business Services",
+      value: "Business Services",
+    },
+    {
+      label: "Engineering",
+      value: "Engineering",
+    },
+    {
+      label: "Information Technology and Telecommunications",
+      value: "Information Technology and Telecommunications",
+      informationTechnologyAndTelecommunications: [
+        {
+          label: "Programming Consultancy",
+          value: "Programming Consultancy",
+        },
+        {
+          label: "Software,Hardware",
+          value: "Software,Hardware",
+        },
+        {
+          label: "Telecommunications",
+          value: "Telecommunications",
+        },
+      ],
+    },
+    {
+      label: "Tourism",
+      value: "Tourism",
+    },
+    {
+      label: "Translation Services",
+      value: "Translation Services",
+    },
+    {
+      label: "Transport and Logistics",
+      value: "Transport and Logistics",
+      transportAndLogistics: [
+        {
+          label: "Air",
+          value: "Air",
+        },
+        {
+          label: "Rail",
+          value: "Rail",
+        },
+        {
+          label: "Road",
+          value: "Road",
+        },
+        {
+          label: "Water",
+          value: "Water",
         },
       ],
     },

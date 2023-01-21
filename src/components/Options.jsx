@@ -106,14 +106,139 @@ const Options = () => {
                       >
                         {subItem.label}
                       </option>
+                      {subItem?.metalWorks?.map((subSubItem) => {
+                        return (
+                          <>
+                            <option
+                              className="subSubItem"
+                              key={subSubItem.value}
+                              value={subSubItem.value}
+                            >
+                              {subSubItem.label}
+                            </option>
+                          </>
+                        );
+                      })}
                     </>
                   );
                 })}
-                {item?.metalWorking?.map((subSubItem) => {
+                {item?.plasticAndRubber?.map((subItem) => {
                   return (
                     <>
                       <option
-                        className="subSubItem"
+                        className="subItem"
+                        key={subItem.value}
+                        value={subItem.value}
+                      >
+                        {subItem.label}
+                      </option>
+                      {subItem?.plasticProcessingTechnology?.map(
+                        (subSubItem) => {
+                          return (
+                            <>
+                              <option
+                                className="subSubItem"
+                                key={subSubItem.value}
+                                value={subSubItem.value}
+                              >
+                                {subSubItem.label}
+                              </option>
+                            </>
+                          );
+                        }
+                      )}
+                    </>
+                  );
+                })}
+                {item?.printing?.map((subItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subItem"
+                        key={subItem.value}
+                        value={subItem.value}
+                      >
+                        {subItem.label}
+                      </option>
+                    </>
+                  );
+                })}
+                {item?.textileAndClothing?.map((subItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subItem"
+                        key={subItem.value}
+                        value={subItem.value}
+                      >
+                        {subItem.label}
+                      </option>
+                    </>
+                  );
+                })}
+                {item?.wood?.map((subItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subItem"
+                        key={subItem.value}
+                        value={subItem.value}
+                      >
+                        {subItem.label}
+                      </option>
+                    </>
+                  );
+                })}
+              </>
+            );
+          })}
+          {data.other.map((item) => {
+            return (
+              <>
+                {item.style === "bold" ? (
+                  <option className="parentOption" value="">
+                    {item.label}
+                  </option>
+                ) : (
+                  <option className="subParentOption" value={item.value}>
+                    {item.label}
+                  </option>
+                )}
+              </>
+            );
+          })}
+          {data.services.map((item) => {
+            return (
+              <>
+                {item.style === "bold" ? (
+                  <option className="parentOption" value="">
+                    {item.label}
+                  </option>
+                ) : (
+                  <option className="subParentOption" value={item.value}>
+                    {item.label}
+                  </option>
+                )}
+                {item?.informationTechnologyAndTelecommunications?.map(
+                  (subItem) => {
+                    return (
+                      <>
+                        <option
+                          className="subItem"
+                          key={subItem.value}
+                          value={subItem.value}
+                        >
+                          {subItem.label}
+                        </option>
+                      </>
+                    );
+                  }
+                )}
+                {item?.transportAndLogistics?.map((subSubItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subItem"
                         key={subSubItem.value}
                         value={subSubItem.value}
                       >
