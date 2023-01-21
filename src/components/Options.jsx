@@ -30,29 +30,94 @@ const Options = () => {
           <input type="text" />
         </label>
         <select className="selectContainer" size="25">
-          <option className="parentOption" value="">
-            Manufacturing
-          </option>
           {data?.manufacturing?.map((item, index) => {
-            console.log(item);
+            // console.log(item.machinery);
             return (
               <>
-                <option className="mainOptions" key={index} value={item.value}>
-                  {item.label}
-                </option>
+                {item.style === "bold" ? (
+                  <option className="parentOption" value="">
+                    {item.label}
+                  </option>
+                ) : (
+                  <option className="subParentOption" value={item.value}>
+                    {item.label}
+                  </option>
+                )}
 
                 {item?.foodAndBeverage?.map((subItem) => {
                   return (
                     <>
-                      <option className="subParentOption" value="">
-                        {subItem?.sub?.label}
-                      </option>
                       <option
                         className="subItem"
                         key={subItem.value}
                         value={subItem.value}
                       >
                         {subItem.label}
+                      </option>
+                    </>
+                  );
+                })}
+                {item?.furniture?.map((subItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subItem"
+                        key={subItem.value}
+                        value={subItem.value}
+                      >
+                        {subItem.label}
+                      </option>
+                    </>
+                  );
+                })}
+                {item?.machinery?.map((subItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subItem"
+                        key={subItem.value}
+                        value={subItem.value}
+                      >
+                        {subItem.label}
+                      </option>
+                      {subItem?.maritime?.map((subSubItem) => {
+                        return (
+                          <>
+                            <option
+                              className="subSubItem"
+                              key={subSubItem.value}
+                              value={subSubItem.value}
+                            >
+                              {subSubItem.label}
+                            </option>
+                          </>
+                        );
+                      })}
+                    </>
+                  );
+                })}
+                {item?.metalWorking?.map((subItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subItem"
+                        key={subItem.value}
+                        value={subItem.value}
+                      >
+                        {subItem.label}
+                      </option>
+                    </>
+                  );
+                })}
+                {item?.metalWorking?.map((subSubItem) => {
+                  return (
+                    <>
+                      <option
+                        className="subSubItem"
+                        key={subSubItem.value}
+                        value={subSubItem.value}
+                      >
+                        {subSubItem.label}
                       </option>
                     </>
                   );

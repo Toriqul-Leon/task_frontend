@@ -1,121 +1,6 @@
 export const data2 = [
   {
     manufacturing: {
-      label: "Manufacturing",
-      value: "Manufacturing",
-
-      foodAndBeverage: {
-        label: "Food and Beverage",
-        value: "Food and Beverage",
-        bakeryAndConfectioneryProducts: {
-          label: "Bakery & Confectionery Products",
-          value: "Bakery & Confectionery Products",
-        },
-        beverages: {
-          label: "Beverages",
-          value: "Beverages",
-        },
-        fishAndFishProducts: {
-          label: "Fish & Fish Products",
-          value: "Fish & Fish Products",
-        },
-        meatAndMeatProducts: {
-          label: "Meat & Meat Products",
-          value: "Meat & Meat Products",
-        },
-        milkAndDairyProducts: {
-          label: "Milk & Dairy Products",
-          value: "Milk & Dairy Products",
-        },
-        other: {
-          label: "Other",
-          value: "Other",
-        },
-      },
-      furniture: {
-        label: "Furniture",
-        value: "Furniture",
-        bathroom: {
-          label: "Bathroom/sauna",
-          value: "Bathroom/sauna",
-        },
-        bedroom: {
-          label: "Bedroom",
-          value: "Bedroom",
-        },
-        childrenRoom: {
-          label: "Children room",
-          value: "Children room",
-        },
-        kitchen: {
-          label: "Kitchen",
-          value: "Kitchen",
-        },
-        livingRoom: {
-          label: "Living room",
-          value: "Living room",
-        },
-        office: {
-          label: "Office",
-          value: "Office",
-        },
-        other: {
-          label: "Other (Furniture)",
-          value: "Other (Furniture)",
-        },
-        outdoor: {
-          label: "Outdoor",
-          value: "Outdoor",
-        },
-        projectFurniture: {
-          label: "Project furniture",
-          value: "Project furniture",
-        },
-      },
-      machinery: {
-        label: "Machinery",
-        value: "Machinery",
-        machineryComponents: {
-          label: "Machinery Components",
-          value: "Machinery Components",
-        },
-        machineryTools: {
-          label: "Machinery Equipment/tools",
-          value: "Machinery Equipment/tools",
-        },
-        manufactureOfMachinery: {
-          label: "Manufacture of Machinery",
-          value: "Manufacture of Machinery",
-        },
-        maritime: {
-          label: "Maritime",
-          value: "Maritime",
-          aluminumAndStreelWorkboats: {
-            label: "Aluminum and steel workboats",
-            value: "Aluminum and steel workboats",
-          },
-          boatOrYachtBuilding: {
-            label: "Boat/yacht building",
-            value: "Boat/yacht building",
-          },
-          shipRepairAndConversion: {
-            label: "Ship repair and conversion",
-            value: "Ship repair and conversion",
-          },
-        },
-        metalStructures: {
-          label: "Metal Structures",
-          value: "Metal Structures",
-        },
-        other: {
-          label: "Other",
-          value: "Other",
-        },
-        repairAndMaintenanceService: {
-          label: "Repair and Maintenance Service",
-          value: "Repair and Maintenance Service",
-        },
-      },
       metalWorking: {
         label: "Metalworking",
         value: "Metalworking",
@@ -311,6 +196,10 @@ export const data2 = [
 export const data = {
   manufacturing: [
     {
+      label: " Manufacturing",
+      style: "bold",
+    },
+    {
       label: "Construction Materials",
       value: "Construction Materials",
     },
@@ -335,6 +224,124 @@ export const data = {
         { label: "Milk & Dairy Products", value: "Milk & Dairy Products" },
 
         { label: "Other", value: "Other" },
+        { label: "Sweets & snack food", value: "Milk & Dairy Products" },
+      ],
+    },
+    {
+      label: "Furniture",
+      value: "Furniture",
+
+      furniture: [
+        { label: "Bathroom/sauna", value: "Bathroom/sauna" },
+
+        { label: "Bedroom", value: "Bedroom" },
+
+        { label: "Children room", value: "Children room" },
+
+        { label: "Kitchen", value: "Kitchen" },
+
+        {
+          label: "Living room",
+          value: "Living room",
+        },
+
+        {
+          label: "Office",
+          value: "Office",
+        },
+
+        {
+          label: "Other (Furniture)",
+          value: "Other (Furniture)",
+        },
+        {
+          label: "Outdoor",
+          value: "Outdoor",
+        },
+        { label: "Project furniture", value: "Project furniture" },
+      ],
+    },
+    {
+      label: "Machinery",
+      value: "Machinery",
+      machinery: [
+        { label: "Machinery Components", value: "Machinery Components" },
+        {
+          label: "Machinery Equipment/tools",
+          value: "Machinery Equipment/tools",
+        },
+
+        {
+          label: "Manufacture of Machinery",
+          value: "Manufacture of Machinery",
+        },
+        {
+          label: "Maritime",
+          value: "Maritime",
+          maritime: [
+            {
+              label: "Aluminum and steel workboats",
+              value: "Aluminum and steel workboats",
+            },
+
+            { label: "Boat/yacht building", value: "Boat/yacht building" },
+
+            {
+              label: "Ship repair and conversion",
+              value: "Ship repair and conversion",
+            },
+          ],
+        },
+
+        { label: "Metal Structures", value: "Metal Structures" },
+
+        { label: "Other", value: "Other" },
+
+        {
+          label: "Repair and Maintenance Service",
+          value: "Repair and Maintenance Service",
+        },
+      ],
+    },
+    {
+      label: "Metalworking",
+      value: "Metalworking",
+      metalWorking: [
+        { label: "Machinery Components", value: "Machinery Components" },
+        {
+          label: "Construction of metal structures",
+          value: "Construction of metal structures",
+        },
+
+        {
+          label: "Houses and buildings",
+          value: "Houses and buildings",
+        },
+        {
+          label: "Metal products",
+          value: "Metal products",
+        },
+        {
+          label: "Metal works",
+          value: "Metal works",
+          metalWorks: [
+            {
+              label: "CNC-machining",
+              value: "CNC-machining",
+            },
+
+            { label: "Forgings,fasteners", value: "Forgings,fasteners" },
+
+            {
+              label: "Gas,plasma, Laser cutting",
+              value: "Gas,plasma, Laser cutting",
+            },
+            {
+              label: "MIG,TIG, Aluminum welding",
+              value: "MIG,TIG, Aluminum welding",
+            },
+          ],
+        },
       ],
     },
   ],
