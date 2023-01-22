@@ -17,6 +17,7 @@ const User = () => {
       });
   }, [setUser]);
   console.log(user?.sectors?.join(" ,"));
+
   return (
     <div className="containerRefilled">
       <div className="userContainer">

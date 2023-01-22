@@ -51,11 +51,12 @@ const Options = () => {
           })
             .then((res) => res.json())
             .then((data) => {
-              console.log(data);
+              if (data.modifiedCount > 0) {
+                setShowUser(true);
+                toast.success("User Info Updated");
+              }
             });
         }
-        setShowUser(true);
-        toast.success("User Info Updated");
       });
   };
 
