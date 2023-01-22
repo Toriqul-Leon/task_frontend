@@ -28,7 +28,7 @@ export const data = {
 
         { label: "Milk & Dairy Products", value: "Milk & Dairy Products" },
 
-        { label: "Other", value: "Other" },
+        { label: "Other (Food & Beverage)", value: "Other (Food & Beverage)" },
         { label: "Sweets & snack food", value: "Milk & Dairy Products" },
       ],
     },
